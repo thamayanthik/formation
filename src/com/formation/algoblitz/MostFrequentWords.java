@@ -1,4 +1,4 @@
-package com.formation.algobits;
+package com.formation.algoblitz;
 
 import java.util.HashMap;
 import java.util.List;
