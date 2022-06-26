@@ -1,4 +1,4 @@
-package com.formation.algoblitz;
+package com.formation.algoblitz.hashstructure;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.formation.algoblitz;
+package com.formation.algoblitz.arrays;
 
 public class ValidateArrayValuesOrdered {
     public static void main(String... str) {
