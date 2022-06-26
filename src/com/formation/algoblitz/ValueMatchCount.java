@@ -9,7 +9,7 @@ public class ValueMatchCount {
         int[] array = {1,2,3};
         int k = 1;
 
-        System.out.println(match(array, k));
+        System.out.println(k + " repeated number exists " + match(array, k));
 
     }
 
