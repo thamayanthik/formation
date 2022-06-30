@@ -1,0 +1,26 @@
+Array:
+      Array is simple Data Structure where the elements are stored in sequence. Array elements are accessed using index.
+
+      There are 2 types arrays,
+
+        1. Static Array
+        2. Dynamic Array
+
+        Static Array: It is fixed length array. It is not possible to add item more than size of the array
+
+        Time Complexity:
+                    Adding: O(n) [Array has to be resized if the already full, if it has space O(1)]
+                    Getting Element from by Index : O(1)
+                    Getting Element by Value : O(n)
+                    Deleting Element to Array : O(n) [Find index of element and the remove the value]
+
+
+        Dynamic Array: Arrays should grow and Shrink whenever new elements added/dropped;
+                       There is no explicit option to define dynamic array in Java,
+                       ArrayList (not synchronized) and Vector (synchronized) are java supported dynamic arrays.
+                       These classes internally uses arrays to store elements.
+                       These class has logic to grow and shrink whenever elements add/removed from List.
+                       "The size, isEmpty, get, set, iterator, and listIterator operations run in constant time.
+                       The add operation runs in amortized constant time, that is, adding n elements requires O(n) time.
+                       All of the other operations run in linear time (roughly speaking)"
+

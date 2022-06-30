@@ -1,4 +1,4 @@
-package com.formation.session.array;
+package com.formation.session.algodrill.array;
 
 import java.util.HashMap;
 import java.util.Map;
