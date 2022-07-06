@@ -1,5 +1,6 @@
 Array:
-      Array is simple Data Structure where the elements are stored in sequence. Array elements are accessed using index.
+      Array is simple Data Structure where the elements are stored in sequence in memory means consecutive location.
+      Array elements are accessed using index.
 
       There are 2 types arrays,
 
