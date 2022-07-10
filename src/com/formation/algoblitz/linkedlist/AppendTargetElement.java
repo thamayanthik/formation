@@ -1,9 +1,11 @@
 package com.formation.algoblitz.linkedlist;
 
+import com.formation.util.ListNode;
+
 public class AppendTargetElement {
     public static void main(String[] args) {
-        Node head = new Node(1, new Node(2, new Node(10, null)));
-        Node node = appendTargetElement(head, 11);
+        ListNode head = new ListNode(1, new ListNode(2, new ListNode(10, null)));
+        ListNode node = appendTargetElement(head, 11);
 
         while (node != null) {
             System.out.print(node.value + " ");
@@ -12,8 +14,8 @@ public class AppendTargetElement {
 
         System.out.println();
 
-        Node head1 = new Node(1, new Node(2, new Node(10, null)));
-        Node node1 = appendElementUsingRecursion(head1, head1, 11);
+        ListNode head1 = new ListNode(1, new ListNode(2, new ListNode(10, null)));
+        ListNode node1 = appendElementUsingRecursion(head1, head1, 11);
 
         while (node1 != null) {
             System.out.print(node1.value + " ");
@@ -29,14 +31,14 @@ public class AppendTargetElement {
         }
     }
 
-    private static Node appendTargetElement(Node head, int target) {
-        Node currentNode = head;
+    private static ListNode appendTargetElement(ListNode head, int target) {
+        ListNode currentNode = head;
 
         while (currentNode != null && currentNode.next != null) {
             currentNode = currentNode.next;
         }
 
-        Node node = new Node(target, null);
+        ListNode node = new ListNode(target, null);
 
         if (currentNode == null) {
             head = node;
@@ -47,9 +49,9 @@ public class AppendTargetElement {
         return head;
     }
 
-    private static Node appendElementUsingRecursion(Node head, Node currentNode, int target) {
+    private static ListNode appendElementUsingRecursion(ListNode head, ListNode currentNode, int target) {
         if (currentNode == null || (currentNode != null && currentNode.next == null)) {
-            Node node = new Node(target, null);
+            ListNode node = new ListNode(target, null);
             if (currentNode != null) {
                 currentNode.next = node;
             } else {

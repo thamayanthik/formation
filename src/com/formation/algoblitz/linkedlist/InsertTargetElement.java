@@ -1,29 +1,31 @@
 package com.formation.algoblitz.linkedlist;
 
+import com.formation.util.ListNode;
+
 public class InsertTargetElement {
     public static void main(String[] args) {
-        Node head = new Node(1, new Node(2, new Node(10, null)));
-        Node node = insertTargetElement(head, 11);
+        ListNode head = new ListNode(1, new ListNode(2, new ListNode(10, null)));
+        ListNode node = insertTargetElement(head, 11);
     }
 
-    private static Node insertTargetElement(Node head, int target) {
-        Node currentNode = head;
-        Node prevNode = null;
+    private static ListNode insertTargetElement(ListNode head, int target) {
+        ListNode currentNode = head;
+        ListNode prevNode = null;
         if (currentNode == null) {
-            Node newNode = new Node(target, null);
+            ListNode newNode = new ListNode(target, null);
             head = newNode;
             return head;
         }
 
         while (currentNode != null) {
             if (currentNode.value > target) {
-                Node newNode = new Node(target, currentNode);
+                ListNode newNode = new ListNode(target, currentNode);
                 if (prevNode != null) {
                     prevNode.next = newNode;
                 }
                 break;
             } else if (currentNode.next == null) {
-                Node newNode = new Node(target, null);
+                ListNode newNode = new ListNode(target, null);
                 currentNode.next = newNode;
                 break;
             } else {

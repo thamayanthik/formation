@@ -1,5 +1,7 @@
 package com.formation.algoblitz.linkedlist;
 
+import com.formation.util.ListNode;
+
 public class FindElement {
     public static void main(String[] args) {
 
@@ -8,7 +10,7 @@ public class FindElement {
         System.out.println("Result : " + elementExists);
     }
 
-    private static boolean findElement(Node node, int target) {
+    private static boolean findElement(ListNode node, int target) {
 
         while (node != null) {
             if (node.value == target) {

@@ -1,5 +1,7 @@
 package com.formation.algoblitz.linkedlist;
 
+import com.formation.util.ListNode;
+
 public class CountOddValues {
     public static void main(String[] args) {
         int oddCount = countOddValues(NodeCreationHelper.createNode(8));
@@ -11,7 +13,7 @@ public class CountOddValues {
         System.out.println("CountOddValuesUsingRecursion Result : " + oddCount);
     }
 
-    private static int countOddValues(Node node) {
+    private static int countOddValues(ListNode node) {
         int count = 0;
         while (node != null) {
             if (node.value % 2 != 0) {
@@ -23,7 +25,7 @@ public class CountOddValues {
         return count;
     }
 
-    private static int countOddValuesUsingRecursion(Node node) {
+    private static int countOddValuesUsingRecursion(ListNode node) {
         if (node == null) {
             return 0;
         } else {

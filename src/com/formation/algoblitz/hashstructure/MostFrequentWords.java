@@ -5,6 +5,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * Given a list of words, return the most frequent word (the word that occurs the most).
+ * You that assume that each word includes only lowercase letters, without punctuations or spaces, and are at least 1 character long.
+ * In case of ties for the most frequent word, return the shortest word.
+ * Assume that words with the same frequency will always have different lengths.
+ * For example:
+    * ["man", "cat", "man"] should return "man". The word "man" is most frequent.
+    * ["major", "book", "major", "book"] should return "book". Both words have the same frequency, but "book" is shorter.
+    * [execution time limit] 3 seconds (java)
+ */
 public class MostFrequentWords {
     public static void main(String... str) {
         String[] words = {"man", "word", "man"};

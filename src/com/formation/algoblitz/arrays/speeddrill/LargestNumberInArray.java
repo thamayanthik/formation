@@ -1,5 +1,9 @@
 package com.formation.algoblitz.arrays.speeddrill;
 
+/**
+ * Given an array of integers with only one largest element, determine whether the largest element is at least twice
+ * as big as all other numbers in the array. If it is, return the largest element's index, otherwise return -1.
+ */
 public class LargestNumberInArray {
     public static void main(String[] args) {
         System.out.println("Largest Number : " + largestNumber2ndApproach(new int[]{3, 6, 1, 0}));

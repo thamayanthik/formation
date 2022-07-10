@@ -1,5 +1,7 @@
 package com.formation.algoblitz.linkedlist;
 
+import com.formation.util.ListNode;
+
 public class FindMaxValue {
     public static void main(String[] args) {
         int maxValue = findMaxValue(NodeCreationHelper.createNode(8));
@@ -12,7 +14,7 @@ public class FindMaxValue {
 
     }
 
-    private static int findMaxValue(Node node) {
+    private static int findMaxValue(ListNode node) {
         int max = Integer.MIN_VALUE;
 
         while (node != null) {
@@ -23,7 +25,7 @@ public class FindMaxValue {
         return max;
     }
 
-    private static int findMaxValueUsingRecursion(Node node, int max) {
+    private static int findMaxValueUsingRecursion(ListNode node, int max) {
         if (node == null) {
             return max;
         } else {

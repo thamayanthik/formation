@@ -1,6 +1,6 @@
 package com.formation.algoblitz.linkedlist;
 
-import java.util.LinkedList;
+import com.formation.util.ListNode;
 
 public class CountElementsInLinkedList {
     public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class CountElementsInLinkedList {
         System.out.println("Result : " + numberOfElements);
     }
 
-    private static int countElementsUsingIteration(Node head) {
+    private static int countElementsUsingIteration(ListNode head) {
         int count = 0;
         while (head != null) {
             head = head.next;
@@ -20,7 +20,7 @@ public class CountElementsInLinkedList {
         return count;
     }
 
-    private static int countElementsUsingRecursion(Node head) {
+    private static int countElementsUsingRecursion(ListNode head) {
 
        if (head == null) {
            return 0;

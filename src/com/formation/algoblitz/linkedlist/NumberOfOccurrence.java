@@ -1,8 +1,9 @@
 package com.formation.algoblitz.linkedlist;
 
+import com.formation.util.ListNode;
+
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 
 public class NumberOfOccurrence {
 
@@ -12,7 +13,7 @@ public class NumberOfOccurrence {
         System.out.println("Result : " + numberOccurred2);
     }
 
-    private static long numberOfOccurrence(Node node) {
+    private static long numberOfOccurrence(ListNode node) {
         Map<Integer, Integer> count = new HashMap<>();
 
         while (node != null) {
