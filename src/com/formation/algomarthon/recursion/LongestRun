@@ -1,0 +1,15 @@
+Write a recursive function named longestRun that accepts a reference to a vector of integers as its parameter and returns the length of the longest "run" in that vector, where a "run" is defined as a sorted subsequence of neighboring values within the vector. In other words, you must find the length of the longest run of consecutive nondecreasing numbers in the vector. For example, consider a vector named v containing the following elements:
+
+{4, 8, 8, 21, 5, 2, 6, 8, 6, 2, 1, 3, 3, 3, 17, 9, 8, 11}
+ \_________/     \_____/        \____________/     \___/
+     |              |                 |              |
+  run of 4       run of 3          run of 5       run of 2
+In the vector above, there are several runs. The first is 4, 8, 8, 21. The next is 2, 6, 8. Then there is 1, 3, 3, 3, 17. At the end of the vector is 8, 11. The longest of these is 1, 3, 3, 3, 17, which is a run of 5 sorted numbers in a row. So the call of longestRun(v) should return 5.
+
+Technically, the other elements of v (5, ..., 6, 2, ..., 9) are each part of a trivial 1-element "run." These one-element runs count, too, though the only case where a one-element run would be the longest in the vector would be when the entire vector is in decreasing order. In such a case, your function should return 1. For example, if a vector v2 stores {11, 8, 3, 2}, the call of longestRun(v2) should return 1.
+
+You may assume that the vector passed to your function is non-empty (it will contain at least one element).
+
+Your function should not make any externally visible changes to the vector passed in. That is, you should either not modify the vector passed, or if you do modify it, you must restore it back to its exact original state before your function returns.
+
+Constraints: Your function must be recursive and not use any loops (for, while, etc.). You may not use a string, array, or any data structure (stack, map, set, etc.) other than the vector passed. Do not declare any global variables.

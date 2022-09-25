@@ -20,7 +20,7 @@ public class ArrangeCharacterByOccurrence {
     }
 
     private static Object[] getCharacterByOccurrence(String s) {
-        Map<Character, Integer> charCount = new HashMap<>();
+        Map<Character, Integer> charCount = new LinkedHashMap<>();
 
         int index = 0;
         while (index < s.length()) {

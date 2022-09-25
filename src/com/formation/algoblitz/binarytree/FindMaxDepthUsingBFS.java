@@ -8,6 +8,7 @@ import java.util.Queue;
 public class FindMaxDepthUsingBFS {
     public static void main(String[] args) {
         System.out.println(maxDepthBFS(new TreeNode(1, new TreeNode(2, null, null), null)));
+        System.out.println(maxDepthUsingRecursion(new TreeNode(1, new TreeNode(2, null, null), null)));
     }
 
     public static int maxDepthBFS(TreeNode root) {
@@ -29,5 +30,13 @@ public class FindMaxDepthUsingBFS {
             max++;
         }
         return max;
+    }
+
+    public static int maxDepthUsingRecursion(TreeNode root) {
+        if (root == null) return 0;
+        int leftCount  = 1 + maxDepthUsingRecursion(root.left);
+        int rightCount = 1 + maxDepthUsingRecursion(root.right);
+
+        return Math.max(leftCount, rightCount);
     }
 }

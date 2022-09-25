@@ -9,6 +9,10 @@ public class ListNode {
         next = nextNode;
     }
 
+    public ListNode(int v) {
+        value = v;
+    }
+
     public String toString() {
 
         StringBuilder builder = new StringBuilder();

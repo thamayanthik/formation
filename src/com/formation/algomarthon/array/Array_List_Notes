@@ -1,0 +1,5 @@
+Arrays.copyOfRange(int[] original, int start, int end)
+new int[] {} -> create empty array
+new int[] {1,2,4}
+
+List.copyOf(list) -> creates copy of the list

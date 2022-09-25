@@ -9,7 +9,7 @@ import java.util.List;
 
 public class GenerateAnagrams {
     public static void main(String[] args) {
-        List result = generateAnagrams("abc",  new ArrayList<>(), 0, 3);
+        List result = generateAnagrams("abc", new ArrayList<>(), 0, 3);
         System.out.println(result);
         solution2("ABC", "");
     }
@@ -19,7 +19,7 @@ public class GenerateAnagrams {
         if (si == len) {
             output.add(input);
         } else {
-            for (int i = si;i < len; i++) {
+            for (int i = si; i < len; i++) {
                 input = swap(input, si, i);
                 generateAnagrams(input, output, si + 1, len);
             }
@@ -40,7 +40,7 @@ public class GenerateAnagrams {
         if (s.length() == 0) {
             System.out.println(ans);
         } else {
-            for (int i = 0; i< s.length();i++) {
+            for (int i = 0; i < s.length(); i++) {
                 char c = s.charAt(i);
                 String leftStr = s.substring(0, i);
                 String rightStr = s.substring(i + 1, s.length());

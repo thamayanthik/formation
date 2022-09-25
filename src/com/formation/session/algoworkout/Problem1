@@ -1,0 +1,13 @@
+Given an array of 0s and 1s, what is the minimum number of moves needed to group all 0s on one side and 1s on the other side?
+A "move" is a swap between any adjacent positions.
+
+E.g.
+[0, 1] => 0, no swaps are needed since they are already grouped
+[0, 1, 0] => 1, swap 1 with either 0 to group them
+[1, 0, 1, 1, 0] => 2, swap 0 with 1 then swap it again with the next 1
+
+Guidance:
+Any assumptions?
+Other example inputs? (any invalid ones?)
+What's a simpler problem to solve?
+How many things do you need to track?
